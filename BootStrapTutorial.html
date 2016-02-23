@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Miss & Match</title>
+        <!--***We link Bootstrap CDN here***-->
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    </head>
+    <body>
+
+    <!--Shows the 12 Columns of the BootStrap grid-->
+    <div class="container-fluid"> <!--Container fluid makes sure to fit the whole screen-->
+        <div class="row">
+            <div class="col-lg-1 col-xs-4 bg-warning"> <!-- "col = column; lg = large; 1 = size; bg = background; warning = a bootstrap color name;-->
+                1
+            </div>
+            <div class="col-lg-1 col-xs-4 bg-info"> <!-- col-xs-4 is added in the case that someone views on a small screen-->
+                2
+            </div>
+            <div class="col-lg-1 col-xs-4 bg-danger">
+                3
+            </div>
+            <div class="col-lg-1 col-xs-4 bg-success">
+                4
+            </div>
+            <div class="col-lg-1 col-xs-4 bg-warning">
+                5
+            </div>
+            <div class="col-lg-1 col-xs-4 bg-info">
+                6
+            </div>
+            <div class="col-lg-1 col-xs-4 bg-danger">
+                7
+            </div>
+            <div class="col-lg-1 col-xs-4 bg-success">
+                8
+            </div>
+            <div class="col-lg-1 col-xs-4 bg-warning">
+                9
+            </div>
+            <div class="col-lg-1 col-xs-4 bg-info">
+                10
+            </div>
+            <div class="col-lg-1 col-xs-4 bg-danger">
+                11
+            </div>
+            <div class="col-lg-1 col-xs-4 bg-success">
+                12
+            </div>
+
+        </div>
+    </div>
+
+    <!--Grid Nesting Example-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 bg-success">
+                <p>This is the Outer Div</p>
+                <div class="row"> <!--Row get's rid of margin (except when screen is scaled down). remove this to see the nesting margin-->
+                     <div class="col-lg-12 col-md-6 bg-primary"> <!--child Div becomes nested within the outer div, takes 12 columns of it's parent. AKA mini div-->
+                        <p>This is the Inner Div</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--BTN Example-->
+    <button class="btn btn-success" onclick="$(this).hide();">Click Me!</button> <!-- onclick="$(this).hide();" makes the button hide after being clicked-->
+
+
+    <!--Javascript files linked below -->
+
+    <!--JQuery file-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    </body>
+</html>
